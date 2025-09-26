@@ -26,5 +26,5 @@ let negValue = -value
 
 let x = 3
 let y = ++x
-console.log(x)
-console.log(y)
+// console.log(x)
+// console.log(y)
