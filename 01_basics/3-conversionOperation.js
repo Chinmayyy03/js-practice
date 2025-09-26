@@ -13,8 +13,18 @@ let intoBoolean = Boolean(name)
 
 let Stringnumber = 11
 let intoString = String(Stringnumber)
-console.log(intoString);
-console.log(typeof intoString);
+// console.log(intoString);
+// console.log(typeof intoString);
 
 
+let value = 1
+let negValue = -value
+// console.log(negValue);
 
+
+// console.log(2*3);
+
+let x = 3
+let y = ++x
+console.log(x)
+console.log(y)
