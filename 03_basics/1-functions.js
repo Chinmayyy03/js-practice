@@ -35,6 +35,33 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`
 }
 // console.log(loginUserMessage("chinmay"))
-console.log(loginUserMessage("Chinmay"))
+// console.log(loginUserMessage("Chinmay"))
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const user = {
+    name : "chinmay",
+    age : 21
+}
+
+function handleObject(anyobject){
+    console.log(`My name is ${anyobject.name} and my age is ${anyobject.age}`);  
+}
+
+// handleObject(user)
+
+// handleObject({
+//     name:"Aditya",
+//     age:21
+// })
+
+const arr = [200,300,400]
+
+function getSecoundArray (getArray){
+    return getArray[1]
+}
+
+console.log(getSecoundArray(arr));
 
 
