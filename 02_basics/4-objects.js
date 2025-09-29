@@ -35,8 +35,20 @@ user1.name = "chinmay"
 // const object3 = {...object1,...object2}
 // console.log(object3);
 
-console.log(Object.keys(user1));
-console.log(Object.values(user1));
+// console.log(Object.keys(user1));
+// console.log(Object.values(user1));
 
-console.log(user1.hasOwnProperty('id'));
+// console.log(user1.hasOwnProperty('id'));
 
+
+
+
+const course = {
+    courseName : "Javascript",
+    courseId : 1
+}                                      // DeStructuing
+
+// console.log(course);
+ const {courseId : id} = course
+ console.log(id);
+ 
