@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h2>Animal Images</h2>
+    <div>
+        <ul id="images">
+            <li><img height="150" id="deer" src="https://cdn.britannica.com/94/494-050-A674AD3A/Fallow-deer-dama-dama.jpg" alt=""></li>
+
+            <li><img height="150" id="elephant" src="https://www.worldanimalprotection.org/cdn-cgi/image/width=1920,format=auto/globalassets/images/elephants/1033551-elephant.jpg" alt=""></li>
+
+            <li><img height="150" id="tiger" src="https://d1jyxxz9imt9yb.cloudfront.net/article/9782/meta_image/regular/AdobeStock_175375173_422894_reduced.jpg" alt=""></li>
+
+            <li id="google">Google</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('deer').onclick = function(){
+    //      alert("deer clicked")
+    //  }
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log('inside ul')
+    // },false)
+
+    // document.getElementById('deer').addEventListener('click',function(e){
+    //     console.log('deer clicked')
+    //     e.stopPropagation()
+    // },false)
+
+    //     document.getElementById('google').addEventListener('click',function(e){
+    //         e.preventDefault()
+    //         console.log("google Clicked")
+    //     false})
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName)
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id)
+             let removeIt = e.target.parentNode
+        // removeIt.remove()
+        removeIt.parentNode.removeChild(removeIt)
+        }
+    })
+
+
+</script>
+</html>
