@@ -64,5 +64,24 @@ String.prototype.trueLength = function(){
     console.log(`true length is: ${this.trim().length}`);
     
 }
-username1.trueLength()
-string1.trueLength()
+// username1.trueLength()
+// string1.trueLength()
+
+
+
+
+
+function setusername(username2) {
+    this.username2 = username2
+    console.log('called');
+}
+
+function createUser(username2,name,password) {
+    setusername.call(this,username2)
+
+    this.name = name
+    this.password = password
+}
+
+const show = new createUser('demo','chinmay','123')
+console.log(show);
